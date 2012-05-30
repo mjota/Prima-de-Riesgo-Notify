@@ -17,8 +17,10 @@ Ejecutar `sudo python setup.py install` en cada uno de los 3 directorios extraí
 
 Ejecutar `sudo python setup.py build` y `sudo python setup.py install` en el directorio extraído.
 
+## Instalación
+
 Descargar esta aplicación y extraer. 
 
-Marcar como ejecutable prima_riesgo.py `chmod 755 prima_riesgo.py`
+Marcar como ejecutable prima_riesgo.py `chmod 755 prima_riesgo.py` y ejecutar
 
 
