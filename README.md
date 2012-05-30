@@ -1,7 +1,7 @@
 Prima de Riesgo Notify
 ======================
 
-Notificador periódico de prima de riesgo para Ubuntu. Actualiza desde el twitter de PrimaRiesgoBot.
+Notificador periódico de prima de riesgo para Ubuntu. Actualiza desde el twitter de [PrimaRiesgoBot](https://twitter.com/#!/PrimaRiesgoBot).
 
 ## Dependencias
 
