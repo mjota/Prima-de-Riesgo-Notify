@@ -29,6 +29,9 @@ TWITNAME = "PrimaRiesgoBot"
 TIMEWAIT = 600
 
 class Main():
+    
+    time_last = 0
+    
     def __init__(self):
         self.api = twitter.Api()
         
@@ -41,9 +44,12 @@ class Main():
             
     def show_prima(self): 
         statuses = self.api.GetUserTimeline(TWITNAME)
-        twit = re.split("//", statuses[0].text)
-        self.notif.update("Prima de riesgo", twit[0] + " Cambio: " + twit[1], "dialog-information")
-        self.notif.show()  
+        
+        if self.time_last != statuses[0].created_at:
+            self.time_last = statuses[0].created_at
+            twit = re.split("//", statuses[0].text)
+            self.notif.update("Prima de riesgo", twit[0] + " Cambio: " + twit[1], "dialog-information")
+            self.notif.show()  
     
     def time_update(self):
         n = 0
