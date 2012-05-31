@@ -50,15 +50,11 @@ class Main():
             twit = re.split("//", statuses[0].text)
             self.notif.update("Prima de riesgo", twit[0] + " Cambio: " + twit[1], "dialog-information")
             self.notif.show()  
-    
+      
     def time_update(self):
-        n = 0
         while(1):
-            time.sleep(1)
-            n+=1
-            if(n>=TIMEWAIT):
-                self.show_prima()
-                n=0  
+            time.sleep(TIMEWAIT)
+            self.show_prima()
       
 if __name__ == '__main__':
     prima = Main()
