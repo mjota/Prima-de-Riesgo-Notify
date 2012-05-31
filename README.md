@@ -3,6 +3,9 @@ Prima de Riesgo Notify
 
 Notificador periódico de prima de riesgo para Ubuntu. Actualiza desde el twitter de [PrimaRiesgoBot](https://twitter.com/#!/PrimaRiesgoBot).
 
+<img src="http://www.cambiodeidea.com/prima.png"
+ alt="Prima de riesgo" title="Prima de riesgo"/>
+
 ## Dependencias
 
 [SimplejSon](http://cheeseshop.python.org/pypi/simplejson)  (Descargar y extraer)
